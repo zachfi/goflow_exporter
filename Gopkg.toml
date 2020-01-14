@@ -1,0 +1,16 @@
+[[constraint]]
+  name = "github.com/cloudflare/goflow"
+  version = "3.2.0"
+
+[[constraint]]
+  name = "github.com/prometheus/client_golang"
+  version = "1.1.0"
+
+[[constraint]]
+  name = "github.com/sirupsen/logrus"
+  version = "1.4.2"
+
+[prune]
+  go-tests = true
+  unused-packages = true
+  non-go = true
