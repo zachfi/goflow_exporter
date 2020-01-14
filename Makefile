@@ -28,7 +28,7 @@ COMMANDS=$(wildcard ${SRCDIR}/cmd/*)
 #BINS=$(foreach cmd,${COMMANDS},$(notdir ${cmd}))
 BINS=znet
 
-LDFLAGS='-X main.Version=$(PROJECT_VER)'
+LDFLAGS='-X main.version=$(PROJECT_VER)'
 
 all: build
 
