@@ -87,6 +87,7 @@ var (
 			"source_port",
 			"destination_port",
 			"proto",
+			"sampler_address",
 		},
 	)
 )
@@ -124,6 +125,7 @@ func flowReceiver(flowChan chan *flowmessage.FlowMessage) {
 				"source_port":         strconv.Itoa(int(f.SrcPort)),
 				"destination_port":    strconv.Itoa(int(f.DstPort)),
 				"proto":               strconv.Itoa(int(f.Proto)),
+				"sampler_address":     net.IP(f.SamplerAddress).String(),
 			},
 		).Add(float64(f.Bytes))
 
